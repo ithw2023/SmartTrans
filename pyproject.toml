@@ -1,0 +1,20 @@
+[tool.poetry]
+name = "smarttrans"
+version = "0.1.0"
+description = ""
+authors = ["ithw2023 <ithw2023@163.com>"]
+readme = "README.md"
+
+#设置poetry包管理工具的自定义pypi镜像源配置
+[[tool.poetry.source]]
+name = "tsinghua"
+url = "https://pypi.tuna.tsinghua.edu.cn/simple"
+default = true
+
+[tool.poetry.dependencies]
+python = "^3.11"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
